@@ -69,9 +69,16 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacao = opcaoSelecionada.afirmacoes;
-    historiaFinal = afirmacao
+    historiaFinal += afirmacao + " ";
     atual++;
     mostraPergunta();
 }
+
+function mostraResultado(){
+    caixaPerguntas.textContent = "Olha só o que podemos afirmar sobre você...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
+
 
 mostraPergunta();
