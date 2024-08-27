@@ -107,7 +107,7 @@ function respostaSelecionada(opcaoSelecionada) {
 function mostraResultado() {
     caixaPerguntas.textContent = "Olha só o que podemos afirmar sobre você...";
     textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+    caixaAlternativas.textContent = "É isso aí! Muito obrigado por responder.";
 }
 
 mostraPergunta();
